@@ -4,4 +4,4 @@ services:
 
 x-uffizzi-ingress:
   service: nginx
-  port: '2345'
+  port: 8888
