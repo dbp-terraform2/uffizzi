@@ -1,1 +1,16 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    volumes: &web-volumes
+      - &app-volume .:/app:cached
+      - public:/app/public
+    ports:
+      - 7000:7000
 
+volumes:
+  public:
+
+networks:
+  default:
+    name: 'default_network'
